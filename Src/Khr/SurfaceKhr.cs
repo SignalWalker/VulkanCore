@@ -101,7 +101,7 @@ namespace VulkanCore.Khr
             Handle = handle;
         }
 
-        internal SurfaceKhr(Instance parent, ref AllocationCallbacks? allocator, long handle)
+        protected internal SurfaceKhr(Instance parent, ref AllocationCallbacks? allocator, long handle)
         {
             Parent = parent;
             Allocator = allocator;
